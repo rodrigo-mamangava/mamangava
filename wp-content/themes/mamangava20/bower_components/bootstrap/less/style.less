@@ -1,0 +1,249 @@
+/*
+Theme Name: Mamangava 2.0
+Theme URI: http://underscores.me/
+Author: Underscores.me
+Author URI: http://underscores.me/
+Description: Description
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: mamangava
+Tags:
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+rede-abrolhos is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+*/
+
+@import "bootstrap.less";
+@import  "../fonts/Plau-Complete-Webfonts/font.css";
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Normalize
+# Reset 
+# Colors
+# Typography
+# Elements
+# Forms
+# Header
+        ## faixa verde top
+        ## Menus
+# Accessibility
+# Alignments
+# Clearings
+# Widgets
+# Content
+        ## Posts and pages
+        ## Comments
+# Infinite scroll
+# Media
+        ## Captions
+        ## Galleries
+--------------------------------------------------------------*/
+
+
+
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Reset
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Colors
+--------------------------------------------------------------*/
+@rosa_mmgv:     #EE3F60;
+@verde_mmgv:    #39BA9C;
+@amarelo_mmgv:  #F3B518;
+@chumbo_mmgv:   #5F6E73;
+@cinza_mmgv:    #F0F0F0;
+@branco_mmgv: white;
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+@plau_li: 'Plau-Light';
+@plau_re: 'Plau-Regular';
+@plau_bo: 'Plau-Bold';
+
+.fonte-25{
+    font-size: 2em;
+    //line-height: 2.1em;
+}
+
+.fonte-16{
+    font-size: 1.2em;
+    //line-height: 1.7em;
+}
+
+.plau-bo-25{
+    .fonte-25;
+    font-family: @plau_bo;
+    text-align: left; 
+    color: @branco_mmgv;
+}
+
+.plau-bo-25-rosa{
+    .plau-bo-25;
+    color: @rosa_mmgv;
+}
+
+.plau-li-25{
+    .fonte-25;
+    font-family: @plau_li;
+    text-align: left;    
+    color: @branco_mmgv;
+}
+
+.plau-li-16{
+    .fonte-16;
+    font-family: @plau_li;
+    text-align: left;   
+    color: @branco_mmgv;
+}
+
+.plau-re-16{
+    .fonte-16;
+    font-family: @plau_re;
+    text-align: left;
+    color: @branco_mmgv;
+}
+
+.plau-re-16-chumbo{
+    .plau-re-16;
+    color: @chumbo_mmgv;
+}
+
+.plau-re-16-amarelo{
+    .plau-re-16;
+    color: @amarelo_mmgv;
+}
+
+
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+body{
+    font-family: @plau_re;
+    padding-top: 0px;
+    background-color: @rosa_mmgv;
+    position: relative;
+    text-color: @branco_mmgv;
+}
+
+a{
+    text-color: @branco_mmgv;
+}
+
+
+
+/*--------------------------------------------------------------
+# Menu
+--------------------------------------------------------------*/
+
+.navbar-default {
+    background-color: @rosa_mmgv;
+    border: 0;
+    margin-top: 0px;
+    padding-top: 50px;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    color: #ffffff;
+    background-color: transparent;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: #ffffff;
+    background-color: transparent;
+}
+
+
+@media (min-width: 768px) {
+    .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+    }
+
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
+}
+
+.nav > li > a {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.nav > li:first-child > a {
+    font-size: 18.4px;
+    text-transform: lowercase;
+    margin-top: -2px;
+}
+
+/*--------------------------------------------------------------
+# Menu
+--------------------------------------------------------------*/
+section{
+    height: 900px;
+    padding-top: 200px;
+    
+}
+/*--------------------------------------------------------------
+# Menu
+--------------------------------------------------------------*/
+#landing-page{
+
+    img {
+        vertical-align: middle;
+        .img-responsive;
+        .center-block;
+    }
+
+    .descricao{
+        .plau-li-25;
+        .text-center;
+        line-height: 1.32em;
+        margin: 24px 0 10px;
+
+        @media (min-width: @screen-md-min) and(max-width: @screen-md-max){
+            margin-top: 12px;
+        }
+        @media (min-width: @screen-sm-min) and(max-width: @screen-sm-max){
+            margin-top: -25px;
+        }
+        @media (max-width: @screen-xs-max){
+            margin-top: 50px;
+        }
+
+    }
+
+
+
+    #seta-baixo{
+        margin-top: 20%;
+    }
+
+}
+/*--------------------------------------------------------------
+# Menu
+--------------------------------------------------------------*/
+#trabalhos{
+    a{
+        color: @branco_mmgv;
+        text-decoration: none;
+    }
+}
