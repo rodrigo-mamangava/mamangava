@@ -9,17 +9,18 @@
 
 
 <div class="col-xs-12 col-sm-6">
+    <div class="card-trabalho"> 
+        <a href="<?php echo get_post_permalink(); ?>">
+            <div>
+               
+                <?php the_title('<h2>', '</h2>') ?>
+                
+                <?php the_post_thumbnail(); ?>
 
-    <a href="<?php echo get_post_permalink(); ?>">
-        <div>
-
-            <?php the_post_thumbnail(); ?>
-
-            <?php the_title('<h2>', '</h2>') ?>
-
-            <?php the_content(); ?>
-        </div>
-    </a>
+                <?php the_excerpt(); ?>
+            </div>
+        </a>
+    </div>
 
 </div>
 

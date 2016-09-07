@@ -88,6 +88,33 @@ function theme_custom_category() {
     register_taxonomy('tecnologia', array('trabalho'), $args);
     //end - cargo
     
+    //Parceiro
+    $labels = array(
+        'name' => 'Parceiro',
+        'singular_name' => 'Parceiro',
+        'search_items' => 'Buscar',
+        'all_items' => 'Todos',
+        'parent_item' => __('Parent'),
+        'parent_item_colon' => __('Parent:'),
+        'edit_item' => 'Editar',
+        'update_item' => 'Editar',
+        'add_new_item' => 'Adicionar novo Parceiro',
+        'new_item_name' => 'Novo Parceiro',
+        'menu_name' => __('Parceiro'),
+    );
+
+    $args = array(
+        'hierarchical' => true,
+        'labels' => $labels,
+        'show_ui' => true,
+        'show_admin_column' => true,
+        'query_var' => true,
+        'rewrite' => array('slug' => 'parceiro'),
+    );
+
+    register_taxonomy('parceiro', array('trabalho'), $args);
+    //end - Parceiro
+    
 }
 
 add_action('init', 'theme_custom_category');

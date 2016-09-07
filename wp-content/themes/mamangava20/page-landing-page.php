@@ -34,6 +34,12 @@ $the_query = new WP_Query("pagename={$pageName}");
                         <?php the_content();?>
                                                    
                     </div>
+                    <div class="col-xs-12 text-center seta">
+                                                
+                        <a href="#como-podemos-ajudar">
+                            <img src="<?php echo get_template_directory_uri() ?>/image/seta_baixo.png">
+                        </a>                         
+                    </div>
                     
                 </div>
                 

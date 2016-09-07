@@ -29,20 +29,29 @@ $the_query = new WP_Query("pagename={$pageName}");
                                                    
                     </div>
                     
+                    <div class="servicos">
+                    
                     <div class="col-xs-12 col-sm-4 text-center">
+                        
+                        <i class="fa fa-users a-5x" aria-hidden="true"></i>
                                                 
                         <h3><?php echo get_field('col_01');?></h3>
                                                    
                     </div>
                     <div class="col-xs-12 col-sm-4 text-center">
+                        
+                        <i class="fa fa-code a-5x" aria-hidden="true"></i>
                                                 
                         <h3><?php echo get_field('col_02');?></h3>
                                                    
                     </div>
                     <div class="col-xs-12 col-sm-4 text-center">
+                        
+                        <i class="fa fa-graduation-cap a-5x" aria-hidden="true"></i>
                                                 
                         <h3><?php echo get_field('col_03');?></h3>
                                                    
+                    </div>
                     </div>
                     
                 </div>

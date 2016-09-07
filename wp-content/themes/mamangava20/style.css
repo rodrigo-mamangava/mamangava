@@ -6843,6 +6843,30 @@ body {
 a {
   text-color: white;
 }
+.btn-enviar {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #ee3f60;
+  background-color: white;
+  border-color: white;
+  border-radius: 0px;
+}
 /*--------------------------------------------------------------
 # Menu
 --------------------------------------------------------------*/
@@ -6886,14 +6910,31 @@ a {
   margin-top: -2px;
 }
 /*--------------------------------------------------------------
-# Menu
+# section
 --------------------------------------------------------------*/
 section {
-  height: 900px;
-  padding-top: 200px;
+  min-height: 900px;
+  padding-top: 250px;
+  color: white;
 }
 /*--------------------------------------------------------------
-# Menu
+.type-trabalho
+--------------------------------------------------------------*/
+.type-trabalho {
+  padding-top: 150px;
+  padding-bottom: 15px;
+}
+.type-trabalho h1 {
+  margin-bottom: 15px;
+}
+.type-trabalho .envira-gallery-wrap {
+  margin-top: 30px;
+}
+.type-trabalho a {
+  color: white;
+}
+/*--------------------------------------------------------------
+#landing-page
 --------------------------------------------------------------*/
 #landing-page img {
   vertical-align: middle;
@@ -6927,21 +6968,15 @@ section {
     margin-top: 50px;
   }
 }
-#landing-page #seta-baixo {
-  margin-top: 20%;
+#landing-page .seta {
+  margin-top: 15%;
 }
 /*--------------------------------------------------------------
-# Menu
---------------------------------------------------------------*/
-#trabalhos a {
-  color: white;
-  text-decoration: none;
-}
-/*--------------------------------------------------------------
-# Menu
+# como-podemos-ajudar
 --------------------------------------------------------------*/
 #como-podemos-ajudar {
-  color: white;
+  padding-top: 150px;
+  padding-bottom: 150px;
 }
 #como-podemos-ajudar h1,
 #como-podemos-ajudar h2,
@@ -6951,4 +6986,72 @@ section {
 #como-podemos-ajudar a {
   color: white;
   text-decoration: none;
+}
+#como-podemos-ajudar .servicos {
+  margin-top: 250px;
+}
+#como-podemos-ajudar .servicos i {
+  font-size: 16rem;
+}
+#como-podemos-ajudar span {
+  color: #f3b518;
+}
+/*--------------------------------------------------------------
+# trabalhos
+--------------------------------------------------------------*/
+#trabalhos {
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+#trabalhos .card-trabalho {
+  min-height: 380px;
+  margin-bottom: 30px;
+}
+#trabalhos a {
+  color: white;
+  text-decoration: none;
+}
+#trabalhos p {
+  margin: 20px 0 10px;
+}
+#trabalhos img {
+  background-color: #f0f0f0;
+}
+/*--------------------------------------------------------------
+# contato
+--------------------------------------------------------------*/
+#contato {
+  padding-top: 150px;
+  padding-bottom: 200px;
+}
+#contato a {
+  color: white;
+  text-decoration: none;
+}
+#contato .wpcf7 {
+  margin-bottom: 100px;
+}
+#contato .wpcf7-submit {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #ee3f60;
+  background-color: white;
+  border-color: white;
+  border-radius: 0px;
 }
