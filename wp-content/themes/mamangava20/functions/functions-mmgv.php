@@ -6,3 +6,7 @@
  * and open the template in the editor.
  */
 
+/**
+ * Img site
+ */
+add_image_size('thumb-trabalhos', 360, 270, true);

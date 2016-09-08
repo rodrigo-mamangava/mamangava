@@ -15,7 +15,7 @@
                
                 <?php the_title('<h2>', '</h2>') ?>
                 
-                <?php the_post_thumbnail(); ?>
+                <?php the_post_thumbnail('thumb-trabalhos'); ?>
 
                 <?php the_excerpt(); ?>
             </div>

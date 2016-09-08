@@ -25,6 +25,9 @@
                 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
                     <div class="container-fluid">
                         <!-- Brand and toggle get grouped for better mobile display -->
+                        <a class="navbar-brand" href="#">
+                            <img alt="Brand" src="<?php echo get_template_directory_uri() ?>/image/(m).png">
+                        </a>
                         <div class="navbar-header">
                             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu-mmgv">
                                 <span class="sr-only">Toggle navigation</span>
